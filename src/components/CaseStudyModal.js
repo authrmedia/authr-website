@@ -2,11 +2,10 @@
 
 export default function CaseStudyModal({ client, onClose }) {
   if (!client) return null;
-  const { slug, nameDisplay, year, service, hero, brief, approach, pillars, photos, reels, photoCount, reelCount } = client;
-  const basePath = `/assets/clients/${slug}`;
+  const { nameDisplay, year, service, hero, brief, approach, pillars, photos, reels, photoCount, reelCount } = client;
 
   return (
-    <div className={`modal open`}>
+    <div className="modal open">
       <div className="modal-nav">
         <button className="modal-back" onClick={onClose}>Back to work</button>
         <span className="modal-logo">authr.</span>
@@ -59,47 +58,55 @@ export default function CaseStudyModal({ client, onClose }) {
         </div>
 
         {/* Reels */}
-        <p className="case-sec-label">Content — Reels</p>
-        <div className="reels-grid">
-          {Array.from({ length: reelCount }).map((_, i) => {
-            const filename = reels[i];
-            return (
-              <div className="reel-cell" key={i}>
-                {filename ? (
-                  <video
-                    src={`${basePath}/reels/${filename}`}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="none"
-                  />
-                ) : (
-                  <div className="reel-cell-ph">
-                    <span className="reel-lbl">Reel {String(i+1).padStart(2,'0')}<br />↓ upload</span>
+        {reelCount > 0 && (
+          <>
+            <p className="case-sec-label">Content — Reels</p>
+            <div className="reels-grid">
+              {Array.from({ length: reelCount }).map((_, i) => {
+                const src = reels[i];
+                return (
+                  <div className="reel-cell" key={i}>
+                    {src ? (
+                      <video
+                        src={src}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                      />
+                    ) : (
+                      <div className="reel-cell-ph">
+                        <span className="reel-lbl">Reel {String(i+1).padStart(2,'0')}<br />↓ upload</span>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+                );
+              })}
+            </div>
+          </>
+        )}
 
         {/* Photos */}
-        <p className="case-sec-label">Content — Photography</p>
-        <div className="photo-grid">
-          {Array.from({ length: photoCount }).map((_, i) => {
-            const filename = photos[i];
-            return (
-              <div className="photo-cell" key={i}>
-                {filename ? (
-                  <img src={`${basePath}/photos/${filename}`} alt="" loading="lazy" />
-                ) : (
-                  <div className="photo-cell-ph" />
-                )}
-              </div>
-            );
-          })}
-        </div>
+        {photoCount > 0 && (
+          <>
+            <p className="case-sec-label">Content — Photography</p>
+            <div className="photo-grid">
+              {Array.from({ length: photoCount }).map((_, i) => {
+                const src = photos[i];
+                return (
+                  <div className="photo-cell" key={i}>
+                    {src ? (
+                      <img src={src} alt="" loading="lazy" />
+                    ) : (
+                      <div className="photo-cell-ph" />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
