@@ -17,7 +17,7 @@ export default function Contact() {
           <h2 className="contact-headline">Start a<br />conversation.</h2>
           <p className="contact-sub">We work with a small number of founders each quarter. If you're building something worth talking about, we want to hear it.</p>
           <div>
-            <div className="meta-item"><span className="meta-label">Email</span><span className="meta-value">hello@authr.ca</span></div>
+            <div className="meta-item"><span className="meta-label">Email</span><span className="meta-value">founder@authrmedia.ca</span></div>
             <div className="meta-item"><span className="meta-label">Based in</span><span className="meta-value">Toronto, ON</span></div>
             <div className="meta-item"><span className="meta-label">Availability</span><span className="meta-value">Accepting Q2 briefs</span></div>
           </div>

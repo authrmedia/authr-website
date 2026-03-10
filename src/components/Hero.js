@@ -31,7 +31,6 @@ export default function Hero() {
         <span className="hero-wordmark">
           {text}<span className="blink" />
         </span>
-        <p className="hero-sub" style={{ listStyle: 'none' }}>Toronto &nbsp;·&nbsp; @authrrr</p>
         <p style={{
           marginTop: '28px',
           fontFamily: 'var(--serif)',
