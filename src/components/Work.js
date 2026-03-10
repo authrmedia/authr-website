@@ -35,7 +35,7 @@ export default function Work() {
 
       <div className="work-header reveal">
         <span className="sec-label">Selected Work</span>
-        <span style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '13px', color: 'var(--mid-grey)' }}>003 clients</span>
+        <span style={{ fontFamily: 'var(--mono)', fontSize: '13px', color: 'var(--mid-grey)' }}>003 clients</span>
       </div>
 
       <div className="work-list">

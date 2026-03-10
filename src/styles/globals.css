@@ -155,7 +155,7 @@ body {
   color: var(--mid-grey); margin-bottom: 24px;
 }
 .phil-statement {
-  font-family: var(--serif); font-style: italic;
+  font-family: var(--mono);
   font-size: clamp(28px, 4vw, 52px); line-height: 1.15;
 }
 .phil-body { font-size: 13px; line-height: 2; color: #444; max-width: 480px; margin-top: 40px; }
@@ -225,7 +225,7 @@ body {
 .case-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 80px; }
 .case-client { font-family: var(--mono); font-size: clamp(40px,7vw,96px); font-weight: 700; letter-spacing: -.03em; line-height: .95; }
 .case-details { text-align: right; }
-.case-year { font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--mid-grey); display: block; margin-bottom: 8px; }
+.case-year { font-family: var(--mono); font-size: 14px; color: var(--mid-grey); display: block; margin-bottom: 8px; }
 .case-service { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--mid-grey); }
 .case-divider { width: 100%; height: 1px; background: var(--light-grey); margin: 48px 0; }
 
@@ -243,7 +243,7 @@ body {
 
 .case-sec { margin-bottom: 64px; }
 .case-sec-label { font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--mid-grey); margin-bottom: 20px; }
-.case-sec-body { font-family: var(--serif); font-size: clamp(17px,2.2vw,24px); line-height: 1.7; max-width: 760px; }
+.case-sec-body { font-family: var(--mono); font-size: clamp(14px, 1.6vw, 18px); line-height: 1.7; max-width: 760px; }
 .pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--light-grey); margin: 48px 0; }
 .pillar { background: var(--white); padding: 40px 32px; }
 .pillar-num { font-size: 10px; letter-spacing: .15em; color: var(--mid-grey); margin-bottom: 16px; display: block; }
@@ -272,7 +272,7 @@ body {
 #contact { min-height: 100vh; padding: 140px 48px; border-top: 1px solid var(--light-grey); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 120px; max-width: 1200px; margin: 0 auto; align-items: start; }
 .contact-headline { font-family: var(--mono); font-size: clamp(36px,5vw,72px); font-weight: 700; letter-spacing: -.03em; line-height: 1; margin-bottom: 40px; }
-.contact-sub { font-family: var(--serif); font-style: italic; font-size: 18px; color: #555; line-height: 1.7; margin-bottom: 64px; max-width: 420px; }
+.contact-sub { font-family: var(--mono); font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 64px; max-width: 420px; }
 .meta-item { display: flex; flex-direction: column; margin-bottom: 32px; }
 .meta-label { font-size: 9px; letter-spacing: .22em; text-transform: uppercase; color: var(--mid-grey); margin-bottom: 6px; }
 .meta-value { font-size: 14px; }
@@ -313,7 +313,7 @@ body {
 }
 .btn-sub:hover::after { transform: scaleX(1); }
 .btn-sub span { position: relative; z-index: 1; }
-.f-note { font-size: 10px; color: var(--mid-grey); font-style: italic; font-family: var(--serif); }
+.f-note { font-size: 10px; color: var(--mid-grey); font-family: var(--mono); }
 
 /* ── FOOTER ── */
 footer {

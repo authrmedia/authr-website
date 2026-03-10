@@ -33,8 +33,7 @@ export default function Hero() {
         </span>
         <p style={{
           marginTop: '28px',
-          fontFamily: 'var(--serif)',
-          fontStyle: 'italic',
+          fontFamily: 'var(--mono)',
           fontSize: '13px',
           letterSpacing: '.02em',
           color: '#BBBBBB',

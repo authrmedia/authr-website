@@ -58,7 +58,7 @@ export default function Home() {
               }}>
                 <span style={{ fontFamily: 'var(--mono)', fontSize: '10px', letterSpacing: '.15em', color: '#AAAAAA', display: 'block', marginBottom: '20px' }}>{step.n}</span>
                 <div style={{ fontFamily: 'var(--mono)', fontWeight: '700', fontSize: '20px', marginBottom: '16px' }}>{step.title}</div>
-                <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: '15px', lineHeight: '1.8', color: '#555' }}>{step.body}</p>
+                <p style={{ fontFamily: 'var(--mono)', fontSize: '15px', lineHeight: '1.8', color: '#555' }}>{step.body}</p>
               </div>
             ))}
           </div>
