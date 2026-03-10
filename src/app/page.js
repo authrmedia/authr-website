@@ -32,6 +32,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 01b — Name */}
+      <section id="name" style={{ padding: '120px 48px', borderTop: '1px solid var(--light-grey)' }}>
+        <div className="phil-grid">
+          <div className="reveal">
+            <p className="phil-label">The name</p>
+            <h2 className="phil-statement">Every brand starts with someone who had something to say.</h2>
+          </div>
+          <div className="reveal" style={{ transitionDelay: '0.15s' }}>
+            <p className="phil-label">The story behind it</p>
+            <p className="phil-body">
+              Before there were marketing departments, there were founders who told their own story. They wrote the ads. They made the calls. They showed up and spoke for what they built.<br /><br />
+              That directness is what made people trust them.<br /><br />
+              authr. exists to bring that back. In a world flooded with content made by committees and approved by algorithms, the most powerful thing a brand can do is sound like a real person who actually believes in what they are selling.<br /><br />
+              We work with founders because founders have something most marketers do not. A point of view. A reason. A stake in the outcome. That is what we build content around. Not a persona. Not a brand voice document. The real thing.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 02 — How */}
       <section id="process" style={{
         padding: '120px 48px',
