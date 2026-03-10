@@ -1,9 +1,6 @@
-// ─────────────────────────────────────────────
-//  authr. — client data
-//  Edit this file to update case study content.
-//  Add/remove photo and reel filenames as you
-//  drop files into public/assets/clients/<slug>/
-// ─────────────────────────────────────────────
+const CDN = 'https://res.cloudinary.com/dtkifypdq';
+const img = (id) => `${CDN}/image/upload/${id}.jpg`;
+const vid = (id) => `${CDN}/video/upload/${id}.mp4`;
 
 export const clients = [
   {
@@ -16,8 +13,7 @@ export const clients = [
     service: 'Brand Content · Social Strategy · Video Production',
     tags: ['Brand Content', 'Social Growth'],
     previewText: 'Candace & Basil — Furniture & Lifestyle',
-    // Hero image: public/assets/clients/candace-basil/hero.jpg
-    hero: '/assets/clients/candace-basil/hero.jpg',
+    hero: img('hero_f6w3cl'),
     brief: "Candace & Basil had already built a reputation. Three years of trust, a loyal customer base, and a second retail location on the horizon. The challenge wasn't visibility — it was depth. How do you evolve a brand without abandoning the foundations that made people love it?",
     approach: "We didn't reinvent. We amplified. Working within the established design philosophy, we developed a content language that elevated each product to the status of an art object. Furniture isn't furniture — it's the decision to make a house feel like home.",
     pillars: [
@@ -25,12 +21,18 @@ export const clients = [
       { num: '002', title: 'Language as Atmosphere', desc: 'Scripted copy chosen to invoke calm, warmth, and domesticity. Words like weight, grain, and lived-in were not accidental.' },
       { num: '003', title: 'Content Pillars', desc: 'Themed content frameworks unified across platforms — from in-store editorial to short-form social, all under the same emotional throughline.' },
     ],
-    // Add filenames as you drop files into public/assets/clients/candace-basil/
     photos: [
-      // 'photo-01.jpg', 'photo-02.jpg', ... up to photo-20.jpg
+      img('photo-01_diacru'), img('photo-02_o7nviz'), img('photo-03_yn1gv9'),
+      img('photo-04_r4h8vu'), img('photo-05_e6uc1i'), img('photo-06_x4nsp6'),
+      img('photo-07_azci0l'), img('photo-08_cvcry1'), img('photo-09_wyeo0s'),
+      img('photo-010_l2oasy'), img('photo-011_j14b4t'), img('photo-012_w9tzql'),
+      img('photo-013_qnrfsm'), img('photo-014_b1tfb6'), img('photo-015_lbohtp'),
+      img('photo-016_jcdlbt'), img('photo-017_erezuv'), img('photo-018_esebbr'),
+      img('photo-019_ln0n5j'), img('photo-020_e00n64'),
     ],
     reels: [
-      // 'reel-01.mp4', 'reel-02.mp4', 'reel-03.mp4', 'reel-04.mp4'
+      vid('reel-01_siyn5x'), vid('reel-02_aghz4l'),
+      vid('reel-03_ojmvpn'), vid('reel-04_xtjsti'),
     ],
     photoCount: 20,
     reelCount: 4,
@@ -45,7 +47,7 @@ export const clients = [
     service: 'Content Strategy · Community Marketing · Booking Funnel',
     tags: ['Content Strategy', 'Community Growth'],
     previewText: 'Lux Car Hire — Exotic Fleet, Ontario',
-    hero: '/assets/clients/lux-car-hire/hero.jpg',
+    hero: img('hero_vzaxzi'),
     brief: "A brand new entry into Ontario's exotic car rental market. No existing audience. No established reputation. But an exceptional fleet — Rolls-Royce Cullinan Black Badge, Urus Performante, Lamborghini Revuelto, Range Rover LWB — and the ambition to own the category.",
     approach: "We thought beyond the customer and targeted the community. Toronto's car culture is one of the most active in North America — passionate, visual, and hyper-connected. We made content built for that ecosystem: cinematic, city-rooted, shareable by design.",
     pillars: [
@@ -54,13 +56,16 @@ export const clients = [
       { num: '003', title: 'Booking Funnel Strategy', desc: 'Impression-led content mapped to a conversion architecture. Curiosity → desire → booking. Each stage had a clear job.' },
     ],
     photos: [
-      // 'photo-01.jpg', ... 'photo-20.jpg'
+      img('photo-01_a3a66f'), img('photo-02_fx5lxp'), img('photo-03_yzut9h'),
+      img('photo-04_kutiy2'), img('photo-05_pko9t3'), img('photo-06_pcqnqk'),
+      img('photo-07_dbfkx3'), img('photo-08_jcvv8r'), img('photo-09_kjzgu6'),
+      img('photo-010_azxj53'), img('photo-011_ack0zj'), img('photo-012_qfwxur'),
+      img('photo-013_mfc0wr'), img('photo-014_zsimr8'), img('photo-015_ihb1ti'),
+      img('photo-016_ztgyyk'),
     ],
-    reels: [
-      // 'reel-01.mp4', ... 'reel-04.mp4'
-    ],
-    photoCount: 20,
-    reelCount: 4,
+    reels: [],
+    photoCount: 16,
+    reelCount: 0,
   },
   {
     id: 2,
@@ -72,7 +77,7 @@ export const clients = [
     service: 'Social Strategy · Content Systems · Multi-Platform Distribution',
     tags: ['Social Strategy', 'Content Systems'],
     previewText: 'Freshman Barbershop — Streetsville, Mississauga',
-    hero: '/assets/clients/freshman-barbershop/hero.jpg',
+    hero: img('hero_i7dycn'),
     brief: "Freshman Barbershop is a Streetsville institution. Locals know it. The culture is there. But their digital presence had fallen behind — inconsistent, reactive, and failing to reflect the community they'd built inside the shop.",
     approach: "We built an engine. Content principles, distribution frameworks, a posting cadence — and a signature format: podcast-style long-form interviews filmed in-shop, repurposed into short-form clips across every major platform. The barbershop as media company.",
     pillars: [
@@ -81,29 +86,22 @@ export const clients = [
       { num: '003', title: 'Multi-Platform Strategy', desc: 'Platform-native content for each channel. Not copy-paste — intentional adaptation. What works on TikTok, stays on TikTok.' },
     ],
     photos: [
-      // 'photo-01.jpg', ... 'photo-20.jpg'
+      img('photo-01_pkqmt3'), img('photo-02_mqpyvn'), img('photo-03_df0hxq'),
+      img('photo-04_b9oxx9'), img('photo-05_zjkwcm'), img('photo-06_otumb7'),
+      img('photo-07_hutljo'), img('photo-08_wzhxez'), img('photo-09_wwgdkt'),
     ],
     reels: [
-      // 'reel-01.mp4', ... 'reel-04.mp4'
+      vid('reel-01_a15n7s'), vid('reel-02_qwvvdq'),
+      vid('reel-03_eyihgc'), vid('reel-04_zibhry'),
     ],
-    photoCount: 20,
+    photoCount: 9,
     reelCount: 4,
   },
 ];
 
-// Belt images — drop files into public/assets/belt/
-// Already have img-01.jpg → img-11.jpg from Lux Car Hire shoot
 export const beltImages = [
-  '/assets/belt/img-01.jpg',
-  '/assets/belt/img-02.jpg',
-  '/assets/belt/img-03.jpg',
-  '/assets/belt/img-04.jpg',
-  '/assets/belt/img-05.jpg',
-  '/assets/belt/img-06.jpg',
-  '/assets/belt/img-07.jpg',
-  '/assets/belt/img-08.jpg',
-  '/assets/belt/img-09.jpg',
-  '/assets/belt/img-10.jpg',
-  '/assets/belt/img-11.jpg',
-  // Add more: '/assets/belt/img-12.jpg', etc.
+  img('photo-01_a3a66f'), img('photo-02_fx5lxp'), img('photo-03_yzut9h'),
+  img('photo-04_kutiy2'), img('photo-05_pko9t3'), img('photo-06_pcqnqk'),
+  img('photo-07_dbfkx3'), img('photo-08_jcvv8r'), img('photo-09_kjzgu6'),
+  img('photo-010_azxj53'), img('photo-011_ack0zj'),
 ];
