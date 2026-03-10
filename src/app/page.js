@@ -4,12 +4,14 @@ import Work from '../components/Work';
 import Contact from '../components/Contact';
 import Cursor from '../components/Cursor';
 import ScrollReveal from '../components/ScrollReveal';
+import QuizPopup from '../components/QuizPopup';
 
 export default function Home() {
   return (
     <>
       <Cursor />
       <ScrollReveal />
+      <QuizPopup />
       <Nav />
 
       <Hero />
