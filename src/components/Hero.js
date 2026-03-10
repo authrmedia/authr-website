@@ -31,7 +31,17 @@ export default function Hero() {
         <span className="hero-wordmark">
           {text}<span className="blink" />
         </span>
-        <p className="hero-sub">@authrrr</p>
+        <p className="hero-sub" style={{ listStyle: 'none' }}>Toronto &nbsp;·&nbsp; @authrrr</p>
+        <p style={{
+          marginTop: '28px',
+          fontFamily: 'var(--serif)',
+          fontStyle: 'italic',
+          fontSize: '13px',
+          letterSpacing: '.02em',
+          color: '#BBBBBB',
+        }}>
+          pull this up on your laptop. trust me.
+        </p>
       </div>
       <Belt />
       <div className="scroll-cue">

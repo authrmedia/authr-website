@@ -13,7 +13,7 @@
   --belt-h: 260px;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; list-style: none; }
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
@@ -80,7 +80,7 @@ body {
   color: var(--black); letter-spacing: -.01em;
   line-height: 1.1; display: block; min-height: 1.2em;
 }
-.hero-sub {
+.hero-sub { list-style: none;
   margin-top: 18px; font-family: var(--mono);
   font-size: clamp(13px, 1.3vw, 17px); font-weight: 700;
   color: var(--mid-grey); letter-spacing: .05em;
